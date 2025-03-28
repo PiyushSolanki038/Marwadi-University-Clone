@@ -1,0 +1,224 @@
+.timetable-container {
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.shortcuts-section {
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.shortcuts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.shortcut-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.breadcrumb {
+  margin: 15px 0;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: #dc3545;
+  text-decoration: none;
+}
+
+.timetable-content, .online-class-content {
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.weekly-timetable {
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.day-schedule {
+  margin-bottom: 30px;
+}
+
+.day-schedule h3 {
+  color: #333;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.schedule-grid {
+  display: grid;
+  gap: 15px;
+}
+
+.class-card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.time-slot {
+  min-width: 120px;
+  padding-right: 15px;
+  border-right: 1px solid #ddd;
+  font-weight: bold;
+}
+
+.class-details {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.class-details h4 {
+  margin: 0 0 5px;
+  color: #333;
+}
+
+.class-details p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+
+.class-actions {
+  display: flex;
+  gap: 5px;
+}
+
+.date-selector {
+  margin: 20px 0;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.date-selector input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.view-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.timetable table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.timetable th {
+  background: #444;
+  color: white;
+  padding: 12px;
+  text-align: left;
+}
+
+.timetable td {
+  padding: 12px;
+  border-bottom: 1px solid #eee;
+}
+
+.timetable tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.status-btn {
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.2s;
+}
+
+.status-btn:hover {
+  transform: scale(1.1);
+}
+
+.status-btn.more {
+  background: #6c757d;
+}
+
+.status-btn.more.active {
+  background: #495057;
+}
+
+.more-options {
+  background: #f8f9fa;
+}
+
+.options-menu {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.options-menu button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.options-menu button:hover {
+  background: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+.status-btn.success {
+  background: #28a745;
+}
+
+.status-btn.warning {
+  background: #ffc107;
+  color: #000;
+}
+
+.status-btn.info {
+  background: #17a2b8;
+}
+
+.view-selector {
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+
+.view-selector label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}

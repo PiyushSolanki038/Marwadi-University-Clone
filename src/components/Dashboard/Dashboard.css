@@ -1,0 +1,327 @@
+.dashboard-container {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.dashboard-header {
+  background: white;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mu-logo {
+  height: 50px;
+}
+
+.naac-logo {
+  height: 30px;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background: #f5f7fa;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+.search-bar input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 200px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  padding: 12px 20px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #f5f5f5;
+}
+
+.hero-banner {
+  position: relative;
+}
+
+.banner-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.banner-strip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.shortcuts-section {
+  padding: 2rem;
+}
+
+.shortcuts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.shortcut-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s;
+}
+
+.shortcut-card:hover {
+  transform: translateY(-5px);
+}
+
+.shortcut-card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.bus-registration {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.bus-registration button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.current-activity {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.activity-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.activity-date {
+  text-align: center;
+  min-width: 60px;
+}
+
+.bottom-sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.new-uploads {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.upload-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.view-more {
+  width: 100%;
+  padding: 0.75rem;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.main-nav {
+  background: #333;
+  padding: 0 2rem;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.main-nav li {
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.main-nav li:hover {
+  background: #444;
+}
+
+.main-nav li.active {
+  background: #dc3545;
+}
+
+.timetable-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.timetable-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.timetable-dropdown .dropdown-item {
+  padding: 12px 20px;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.timetable-dropdown .dropdown-item:hover {
+  background-color: #f5f5f5;
+  color: #dc3545;
+}
+
+/* Add this if you want to highlight the active menu item */
+.timetable-menu.active {
+  color: #dc3545;
+}
+.exam-menu {
+  position: relative;
+}
+
+.exam-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 250px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  z-index: 1000;
+  display: none;
+}
+
+.exam-menu:hover .exam-dropdown {
+  display: block;
+}
+
+.exam-dropdown .dropdown-item {
+  padding: 12px 20px;
+  color: #333;
+  display: block;
+  text-decoration: none;
+}
+
+.exam-dropdown .dropdown-item:hover {
+  background: #f5f5f5;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.shortcut-card i {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.shortcut-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+
+.shortcut-card:hover {
+  transform: translateY(-5px);
+}
