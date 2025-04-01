@@ -1,0 +1,126 @@
+.placements-container {
+  padding: 2rem;
+  background: #f5f7fa;
+  min-height: 100vh;
+}
+
+.placements-header {
+  margin-bottom: 3rem;
+}
+
+.placements-header h1 {
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stat-card h3 {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  color: #dc3545;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.upcoming-drives {
+  margin-bottom: 3rem;
+}
+
+.upcoming-drives h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.drives-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.drive-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.drive-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.drive-header h3 {
+  color: #333;
+}
+
+.drive-date {
+  color: #dc3545;
+  font-weight: 500;
+}
+
+.drive-details p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.apply-btn {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.apply-btn:hover {
+  background: #c82333;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(220, 53, 69, 0.4);
+}
+
+.top-recruiters {
+  margin-top: 3rem;
+}
+
+.top-recruiters h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.recruiters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.recruiter-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-weight: 500;
+  color: #333;
+}
